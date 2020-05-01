@@ -66,10 +66,7 @@ def mes(update, context):
 
 
 def close_keyboard(update, context):
-    update.message.reply_text(
-        "Ok",
-        reply_markup=ReplyKeyboardRemove()
-    )
+    update.message.reply_text("Ok", reply_markup=ReplyKeyboardRemove())
 
 
 reply_keyboard1 = [['/dice', '/timer']]

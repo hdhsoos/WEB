@@ -64,7 +64,7 @@ def main():
         fallbacks=[CommandHandler('stop', stop)]
     )
     dp.add_handler(conv_handler)
-    dp.add_handler([CommandHandler('stop', stop)])
+    dp.add_handler(CommandHandler('stop', stop))
     updater.start_polling()
     updater.idle()
 
